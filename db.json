@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "email": "user1@example.com"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "email": "user2@example.com"
+    }
+  ],
+  "login": {
+    "POST": {
+      "request": {
+        "username": "user1",
+        "password": "password1"
+      },
+      "response": {
+        "status": 200,
+        "message": "Login successful",
+        "token": "abc123"
+      },
+      "error": {
+        "status": 401,
+        "message": "Invalid username or password"
+      }
+    }
+  },
+  "register": {
+    "POST": {
+      "request": {
+        "username": "newuser",
+        "password": "newpassword",
+        "email": "newuser@example.com"
+      },
+      "response": {
+        "status": 201,
+        "message": "User registered successfully",
+        "user": {
+          "id": 3,
+          "username": "newuser",
+          "email": "newuser@example.com"
+        }
+      },
+      "error": {
+        "status": 400,
+        "message": "Username or email already exists"
+      }
+    }
+  }
+}
