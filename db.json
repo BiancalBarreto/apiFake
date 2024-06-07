@@ -1,55 +1,74 @@
-{
-  "users": [
+[
     {
-      "id": 1,
-      "username": "user1",
-      "password": "password1",
-      "email": "user1@example.com"
+        "status": "Coral saudável",
+        "nome_completo": "João Silva",
+        "data": "2023-05-21",
+        "funcao": "Desenvolvedor",
+        "localizacao": "São Paulo",
+        "pais": "Brasil",
+        "estado": "SP"
     },
     {
-      "id": 2,
-      "username": "user2",
-      "password": "password2",
-      "email": "user2@example.com"
+        "status": "Coral esbranquiçado",
+        "nome_completo": "Maria Oliveira",
+        "data": "2022-11-13",
+        "funcao": "Analista de Dados",
+        "localizacao": "Rio de Janeiro",
+        "pais": "Brasil",
+        "estado": "RJ"
+    },
+    {
+        "status": "Coral saudável",
+        "nome_completo": "Carlos Pereira",
+        "data": "2024-02-05",
+        "funcao": "Gerente de Projetos",
+        "localizacao": "Belo Horizonte",
+        "pais": "Brasil",
+        "estado": "MG"
+    },
+    {
+        "status": "Coral saudável",
+        "nome_completo": "Ana Costa",
+        "data": "2023-08-19",
+        "funcao": "Designer",
+        "localizacao": "Porto Alegre",
+        "pais": "Brasil",
+        "estado": "RS"
+    },
+    {
+        "status": "Coral saudável",
+        "nome_completo": "Paulo Souza",
+        "data": "2021-04-29",
+        "funcao": "Engenheiro de Software",
+        "localizacao": "Curitiba",
+        "pais": "Brasil",
+        "estado": "PR"
+    },
+    {
+        "status": "Coral esbranquiçado",
+        "nome_completo": "Juliana Alves",
+        "data": "2023-12-01",
+        "funcao": "Marketing",
+        "localizacao": "Salvador",
+        "pais": "Brasil",
+        "estado": "BA"
+    },
+    {
+        "status": "Coral esbranquiçado",
+        "nome_completo": "Fernando Lima",
+        "data": "2020-07-15",
+        "funcao": "Administrador",
+        "localizacao": "Fortaleza",
+        "pais": "Brasil",
+        "estado": "CE"
+    },
+    {
+        "status": "Coral saudável",
+        "nome_completo": "Patrícia Mendes",
+        "data": "2024-03-10",
+        "funcao": "Recursos Humanos",
+        "localizacao": "Manaus",
+        "pais": "Brasil",
+        "estado": "AM"
     }
-  ],
-  "login": {
-    "POST": {
-      "request": {
-        "username": "user1",
-        "password": "password1"
-      },
-      "response": {
-        "status": 200,
-        "message": "Login successful",
-        "token": "abc123"
-      },
-      "error": {
-        "status": 401,
-        "message": "Invalid username or password"
-      }
-    }
-  },
-  "register": {
-    "POST": {
-      "request": {
-        "username": "newuser",
-        "password": "newpassword",
-        "email": "newuser@example.com"
-      },
-      "response": {
-        "status": 201,
-        "message": "User registered successfully",
-        "user": {
-          "id": 3,
-          "username": "newuser",
-          "email": "newuser@example.com"
-        }
-      },
-      "error": {
-        "status": 400,
-        "message": "Username or email already exists"
-      }
-    }
-  }
-}
+]
